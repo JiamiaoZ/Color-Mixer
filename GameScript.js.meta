@@ -1,0 +1,82 @@
+- !<AssetImportMetadata/f9c2de1c-d5b4-44e7-907a-c8be3383c5a2>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 6ad907ae-df09-4a3f-a85a-f4a94c1783cb
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 6ad907ae-df09-4a3f-a85a-f4a94c1783cb
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> b1bf9922-8630-4ad3-9ed9-5d46f84daf70
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/b1bf9922-8630-4ad3-9ed9-5d46f84daf70>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 298591ce-81bb-4e9d-af0e-80182ed156ee
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    circleImages: false
+    circleObjects: false
+    color: false
+    colorWheelComponent: false
+    confirmObject: false
+    confirmText: false
+    inputColorObj: false
+    inputMaterial: false
+    inputTex: false
+    leaderboard: false
+    paletteImage: false
+    paletteObject: false
+    percentageObj: false
+    percentageTxt: false
+    revealImage: false
+    revealObject: false
+    scoreObject: false
+    scoreText: false
+    stageObject: false
+    stageText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - stageObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stageText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      scoreObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      paletteObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      paletteImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      circleObjects: !<reference.SceneObject[]>
+        []
+      circleImages: !<reference.Image[]>
+        []
+      inputColorObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      inputMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      inputTex: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      color: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      colorWheelComponent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      confirmObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      confirmText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      revealObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      revealImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      percentageObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      percentageTxt: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      leaderboard: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

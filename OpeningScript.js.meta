@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/9daa3e3f-1f9f-4834-bbb9-5942b68609bf>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 3c80a83f-cc20-4979-adae-353e3c683c9b
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 3c80a83f-cc20-4979-adae-353e3c683c9b
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 7c2f2a25-8e67-4aa7-962f-bb884f05277f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/7c2f2a25-8e67-4aa7-962f-bb884f05277f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 480c50fe-9b3c-4a23-bf9e-e99100399c61
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    paletteImage: false
+    paletteObject: false
+    scoreObject: false
+    scoreText: false
+    stageObject: false
+    stageText: false
+    textComponent: false
+    textComponent2: false
+    textObject1: false
+    textObject2: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - textObject1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      textComponent: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      textObject2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      textComponent2: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      paletteObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      paletteImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      stageObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stageText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      scoreObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
