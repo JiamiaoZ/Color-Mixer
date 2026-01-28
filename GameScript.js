@@ -28,6 +28,16 @@
 
 //@input Component.ScriptComponent leaderboard
 
+//@input Component.Text titleText
+//@input SceneObject title
+
+//@input Component.ScriptComponent LeaderboardInfo
+
+var titleScreenTransform = script.title.getComponent("ScreenTransform");
+
+titleScreenTransform.anchors.left = -50;    // Distance from left edge
+titleScreenTransform.anchors.right = -40;  // Distance from right edge (negative = inset)
+
 print(script.colorWheelComponent.wheelValue); //Outputs selected color
 script.colorWheelComponent.wheelValue = script.color; //Updates color wheel and its target objects
 
@@ -69,6 +79,7 @@ script.confirmText.enabled = false;
 script.percentageTxt.enabled = false;
 
 script.colorWheelComponent.enabled = false;
+script.titleText.enabled = false;
 
 /*script.circleImages.forEach((circle) => {
     circle.enabled = false;
@@ -77,6 +88,7 @@ script.circleObjects.forEach((circle) => {
     var circleTransform = circle.getTransform();
     circleTransform.setLocalScale(new vec3(0, 0, 0));
 })*/
+
 for (var i = 0; i < script.circleImages.length; i++) {
     script.circleImages[i].enabled = false;
 }
@@ -290,6 +302,15 @@ function endStage() {
 }
 
 function submitIfHighScore(currentScore) {
+    script.LeaderboardInfo.submitScore(currentScore);
+
+    script.percentageTxt.enabled = false;
+
+    titleScreenTransform.anchors.left = 0;    // Distance from left edge
+    titleScreenTransform.anchors.right = 0;  // Distance from right edge (negative = inset)
+    script.titleText.enabled = true;
+    print("submitted");
+
     //eh, wanted to do score storage stuff but might not work
     script.leaderboard.onLeaderboardRecordsUpdated.addOnce(function (recordsWrapper) {
     
@@ -328,6 +349,7 @@ function onUpdate() {
     var dt = getDeltaTime();
 
     if (gameState === GameState.START) {
+        script.leaderboard.visible = false;
         stageTime = 0;
         changedInputMaterial = false;
         scoreUpdated = false;
@@ -438,10 +460,14 @@ function onTap(eventData){
             script.confirmText.text = "OK!";
             script.scoreText.text = "Score: 0";
 
+            titleScreenTransform.anchors.left = -50;    // Distance from left edge
+            titleScreenTransform.anchors.right = -40;  // Distance from right edge (negative = inset)
+
             script.stageText.enabled = false;
             script.scoreText.enabled = false;
             script.confirmText.enabled = false;
             script.percentageTxt.enabled = false;
+            script.titleText.enabled = false;
 
             script.colorWheelComponent.enabled = false;
 
